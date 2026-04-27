@@ -1,0 +1,73 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #121212;
+  font-family: Arial, sans-serif;
+}
+
+.calc {
+  background: #1e1e1e;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+#screen {
+  width: 100%;
+  height: 60px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  background: #2c2c2c;
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+button {
+  height: 55px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Number buttons */
+button {
+  background: #333;
+  color: white;
+}
+
+/* Operator buttons */
+.op {
+  background: #ff9500;
+}
+
+/* Equal button */
+#equal {
+  background: #34c759;
+}
+
+/* Clear button */
+#clear {
+  background: #ff3b30;
+}
+
+/* Backspace */
+#back {
+  background: #555;
+}
+
+button:hover {
+  opacity: 0.8;
+}
